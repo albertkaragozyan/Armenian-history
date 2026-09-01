@@ -9,10 +9,10 @@ export default function Card() {
     function normalizeText(text) {
     return text
         .normalize("NFC")
-        .replace(/[․։·]/g, ".")
+        .replace(/[.․։·﹒．｡。]/g, ".")
         .toLowerCase()
         .trim();
-}
+    }
     function searchYear() {
         const cleanYear = year.trim();
         setYear(cleanYear);
