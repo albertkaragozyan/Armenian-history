@@ -448,8 +448,8 @@ svg {
 }
 
 .card {
-  width: 500px;
-  height: 306px;
+  width: 510px;
+  height: 335px;
   background: #07182E;
   position: relative;
   display: flex;
@@ -494,6 +494,7 @@ svg {
   font-size: 21px;
   align-self: baseline;
   padding-left: 20px;
+  padding-right: 10px;
 }
 
 .card-parent {
@@ -618,7 +619,7 @@ svg {
 
   .card {
     width: 350px;
-    height: 250px;
+    height: 300px;
   }
 
   .card>p,
@@ -680,7 +681,7 @@ svg {
 
   .card {
     width: 320px;
-    height: 255px;
+    height: 355px;
   }
 
   .card>p,
