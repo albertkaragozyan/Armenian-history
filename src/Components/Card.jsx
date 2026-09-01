@@ -6,17 +6,19 @@ export default function Card() {
     const [year, setYear] = useState("");
     const [results, setResults] = useState([]);
     const [isSearched, setIsSearched] = useState(false);
-    function normalizeText(text) {
-    return text
-        .normalize("NFC")
-        .replace(/[.․։·﹒．｡。]/g, ".")
-        .toLowerCase()
-        .trim();
+    function normalizeYear(text) {
+        return text
+            .normalize("NFC")
+            .replace(/[.։·﹒．｡。]/g, "․")
+            .replace(/\s+/g, " ")
+            .trim();
     }
     function searchYear() {
-        const cleanYear = year.trim();
+        const cleanYear = normalizeYear(year);
         setYear(cleanYear);
-        const found = history.filter((item) => normalizeText(item.year) === cleanYear);
+        const found = history.filter((item) =>
+            normalizeYear(item.year) === cleanYear
+        );
         setResults(found);
         setIsSearched(true);
     }
@@ -113,9 +115,9 @@ export default function Card() {
                             <p>Այլ փաստեր՝ {item.facts?.length ? item.facts.join(", ") : "չկան"}</p>
                         </div>
                     ))
-                    ) : isSearched ? (
-                        <p className="text-white">Արդյունք չի գտնվել</p>
-                    ) : null}
+                ) : isSearched ? (
+                    <p className="text-white">Արդյունք չի գտնվել</p>
+                ) : null}
             </div>
         </div>
     );
