@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Armenian-history/static/css/main.efd70ee1.css",
+    "main.js": "/Armenian-history/static/js/main.bdc680f3.js",
+    "static/media/emblem.png": "/Armenian-history/static/media/emblem.f40381d5a6ddb81e7cd4.png",
+    "index.html": "/Armenian-history/index.html",
+    "main.efd70ee1.css.map": "/Armenian-history/static/css/main.efd70ee1.css.map",
+    "main.bdc680f3.js.map": "/Armenian-history/static/js/main.bdc680f3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.efd70ee1.css",
+    "static/js/main.bdc680f3.js"
+  ]
+}
